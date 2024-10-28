@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('VAPI_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if os.environ.get('DEBUG'):
+if os.environ.get('DEBUG') == "True":
     DEBUG = True
 
 ALLOWED_HOSTS = ['*']
