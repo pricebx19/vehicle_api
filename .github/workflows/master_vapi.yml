@@ -34,7 +34,6 @@ jobs:
 
       - name: Collect Static
         run: |
-          cd ..
           pwd
           ls
           python manage.py collectstatic
