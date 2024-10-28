@@ -34,7 +34,7 @@ jobs:
 
       - name: Collect Static
         run: |
-          python manage.py collectstatic
+          python ../manage.py collectstatic
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
