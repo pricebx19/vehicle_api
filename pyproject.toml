@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "vehicle-api"
+version = "0.1.0"
+description = ""
+authors = ["Brenden Price <price.brenden01@gmail.com>"]
+readme = "README.md"
+package-mode = false  # Disable packaging
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Django = "^5.1.2"
+djangorestframework = "^3.15.2"
+vehicle_domain_service = {git="https://github.com/pricebx19/vehicle_domain_service.git", rev="main"}
+pytest = "^8.3.3"
+pytest-django = "^4.9.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "vehicle_api.settings"
+python_files = ["test_*.py", "*_test.py", "tests.py"]
