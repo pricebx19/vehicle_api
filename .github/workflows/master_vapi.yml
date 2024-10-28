@@ -34,9 +34,11 @@ jobs:
 
       - name: Collect Static
         run: |
-          cd vehicle_api
           pip install poetry
           poetry install
+          poetry update
+          pip install django
+          poetry add django
           python manage.py collectstatic
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
