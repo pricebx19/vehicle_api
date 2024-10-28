@@ -39,6 +39,7 @@ jobs:
           poetry update
           pip install django
           poetry add django
+          cd vehicle_api
           python manage.py collectstatic
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
