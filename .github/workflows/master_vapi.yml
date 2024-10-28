@@ -38,7 +38,8 @@ jobs:
           poetry install
           poetry update
           pip install django
-          poetry add django
+          pip install djangorestframework
+          poetry add djangorestframework
           cd vehicle_api
           python manage.py collectstatic
         
